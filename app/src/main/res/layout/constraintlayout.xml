@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000">
+
+    <Button
+        android:id="@+id/btnOne"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+
+        android:background="#ff0202"
+        android:text="RED"
+        app:layout_constraintStarts_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#ffa702"
+        android:text="ORANGE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="#ffff02"
+        android:text="YELLOW"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnFour"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:background="#02ff02"
+        android:text="GREEN"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFive"
+        app:layout_constraintEnd_toStartOf="@+id/btnFive" />
+
+    <Button
+        android:id="@+id/btnFive"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="#0202ff"
+        android:text="BLUE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTwo" />
+
+    <Button
+        android:id="@+id/btnSix"
+        android:layout_width="wrap_content"
+        android:layout_height="70sp"
+        android:layout_marginStart="10dp"
+        android:background="#4b0285"
+        android:text="INDIGO"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFive"
+        app:layout_constraintStart_toEndOf="@+id/btnFive" />
+
+    <Button
+        android:id="@+id/btnSeven"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="#ef83ef"
+        android:text="VIOLET"
+        app:layout_constraintTop_toBottomOf="@+id/btnFive"
+         />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:stretchColumns="1">
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:text="Open..."
+            android:textColor="#838383"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_column="1"
+            android:text="Ctrl-O"
+            android:textColor="#838383"
+            android:gravity="right"
+            android:layout_margin="5dp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:text="Save..."
+            android:textColor="#838383"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_column="1"
+            android:text="Ctrl-S"
+            android:textColor="#838383"
+            android:gravity="right"
+            android:layout_margin="5dp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:text="Save As..."
+            android:textColor="#838383"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_column="1"
+            android:text="Ctrl-Shift-S"
+            android:textColor="#838383"
+            android:gravity="right"
+            android:layout_margin="5dp" />
+    </TableRow>
+
+    <View  android:layout_height="5px"
+        android:layout_width="match_parent"
+        android:background="#838383" />
+
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:text="X Import..."
+            android:textColor="#838383"
+            android:layout_margin="5dp"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:text="X Export..."
+            android:textColor="#838383"
+            android:layout_margin="5dp"
+           />
+        <TextView
+            android:layout_column="1"
+            android:text="Ctrl-E"
+            android:textColor="#838383"
+            android:gravity="right"
+            android:layout_margin="5dp"
+             />
+    </TableRow>
+
+    <View  android:layout_height="5px"
+        android:layout_width="match_parent"
+        android:background="#838383" />
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:text="Quit..."
+            android:textColor="#838383"
+            android:layout_margin="5dp"/>
+
+    </TableRow>
+</TableLayout>
