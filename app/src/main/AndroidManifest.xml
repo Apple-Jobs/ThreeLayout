@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LinearLayoutActivity"/>
+        <activity android:name=".ConstraintLayoutActivity"
+                     android:screenOrientation="landscape"/>
+        <activity android:name=".TableLayout"/>
     </application>
 
 </manifest>
