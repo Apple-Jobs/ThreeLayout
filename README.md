@@ -231,10 +231,11 @@ Android实验二_Android布局实验，本代码创建了Android工程按要求�
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.threelayout.MainActivity"
     android:background="#000000">
     <Button
         android:id="@+id/btnOne"
@@ -243,7 +244,7 @@ Android实验二_Android布局实验，本代码创建了Android工程按要求�
 
         android:background="#ff0202"
         android:text="RED"
-        app:layout_constraintStarts_toStartOf="parent" />
+        />
 
     <Button
         android:id="@+id/btnTwo"
@@ -252,10 +253,10 @@ Android实验二_Android布局实验，本代码创建了Android工程按要求�
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="#ffa702"
+
         android:text="ORANGE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/btnOne" />
 
     <Button
         android:id="@+id/btnThree"
@@ -279,11 +280,13 @@ Android实验二_Android布局实验，本代码创建了Android工程按要求�
         android:id="@+id/btnFive"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:background="#0202ff"
         android:text="BLUE"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeven"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTwo" />
@@ -301,14 +304,15 @@ Android实验二_Android布局实验，本代码创建了Android工程按要求�
     <Button
         android:id="@+id/btnSeven"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="8dp"
         android:background="#ef83ef"
         android:text="VIOLET"
-        app:layout_constraintTop_toBottomOf="@+id/btnFive"
-         />
+        app:layout_constraintBottom_toBottomOf="parent"
+      />
 
 </android.support.constraint.ConstraintLayout>
+
 
 ```
 ### 实验结果：
